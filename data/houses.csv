@@ -1,5 +1,10 @@
-number,location
-1,"Renton, WA"
-5,"Madison Park, Seattle, WA"
-7,"Maple Leaf, Seattle, WA"
-9,"Renton, WA"
+number,location,new,old
+1,"Kirkland, WA",4270,770
+2,"Madison Park, Seattle, WA","3,230",590
+3,"Wedgwood, Seattle, WA","4,790",770
+4,"North Beach/Blue Ridge, Seattle, WA","2,970",600
+5,"Renton, WA","4,060",660
+6,"Tukwila, WA","7,190","1,380"
+7,"Bryant, Seattle, WA","3,640",660
+8,"Loyal Heights (Ballard), Seattle, WA","3,270",660
+9,"Medina, WA","6,990","1,260"

@@ -11,18 +11,30 @@ body {
 
 .notes {
   .display-flex();
+
+  @media @mobile {
+    display: block;
+  }
 }
 
-.location, .source {
+.stats, .source {
   font-size: 16px;
-  .flex(1);
+}
+.stats {
+  .flex(2);
+}
+.location {
+  padding-bottom: 4px;
+}
+.sqft {
+  font-size: 14px;
 }
 .source {
+  .flex(1);
   font-style: italic;
   text-align: right;
   color: @df-middle-gray;
   font-size: 12px;
-  padding-top: 4px;
 }
 
 .image-slider {
@@ -34,12 +46,12 @@ body {
 .image-slider .first {
   position: absolute;
   top: 0; bottom: 0; left: 0;
-  width: 25px;
+  width: 15%;
   min-width: 25px;
   max-width: 100%;
   overflow: hidden;
   // resize: horizontal;
-  border-right: 2px solid @df-border-gray;
+  border-right: 3px solid @df-light-gray;
 }
 
 .image-slider > .first:before {
@@ -56,6 +68,7 @@ body {
   border-top-left-radius: 2px;
   border-bottom-left-radius: 2px;
   background: @df-light-gray;
+  // border: 1px
   cursor: pointer;
   -webkit-filter: drop-shadow(0 0 2px black);
   filter: drop-shadow(0 0 2px black);
