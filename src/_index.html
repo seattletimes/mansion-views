@@ -13,9 +13,12 @@
 
       <div class="image-slider">
         <div class="first"><img draggable="false" src="./assets/after<%=house.number%>.JPG"></div>
-        <img draggable="false" src="./assets/before<%=house.number%>.JPG">
+        <div class="second"> <img draggable="false" src="./assets/before<%=house.number%>.JPG"></div>
       </div>
-      <div class="location"><%= house.location %></div>
+      <div class="notes">
+        <div class="location">Location: <strong><%= house.location %></strong></div>
+        <div class="source">Source: Google Street View</div>
+      </div>
 
     </responsive-child>
 

@@ -1,19 +1,37 @@
 @import "seattletimes";
+@import "flexbox";
 
 @width: 630px;
 
 body {
+  font-family: @df-sans;
   max-width: @width;
+  width: 100%;
+}
+
+.notes {
+  .display-flex();
+}
+
+.location, .source {
+  font-size: 16px;
+  .flex(1);
+}
+.source {
+  font-style: italic;
+  text-align: right;
+  color: @df-middle-gray;
+  font-size: 12px;
+  padding-top: 4px;
 }
 
 .image-slider {
-  position:relative;
+  position: relative;
   display: inline-block;
   line-height: 0;
-  margin-bottom: 20px;
 }
 
-.image-slider > .first {
+.image-slider .first {
   position: absolute;
   top: 0; bottom: 0; left: 0;
   width: 25px;
@@ -47,3 +65,4 @@ body {
   user-select: none;
   max-width: @width;
 }
+

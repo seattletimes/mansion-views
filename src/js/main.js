@@ -25,4 +25,15 @@ require("component-responsive-frame/child");
   container.addEventListener("mouseleave", function() {
     container.removeEventListener("mousemove", resizeable);
   });
+
+  var resize = function() {
+    var width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+    if (width < 630) {
+      document.querySelector(".image-slider .first img").style.maxWidth = width + "px";
+      document.querySelector(".image-slider .second img").style.maxWidth = width + "px";
+    }
+  };
+  
+  resize();
+  window.addEventListener('resize', resize);
 // }
