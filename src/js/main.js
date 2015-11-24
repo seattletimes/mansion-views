@@ -22,9 +22,6 @@ require("component-responsive-frame/child");
   container.addEventListener("mouseup", function() {
     container.removeEventListener("mousemove", resizeable);
   });
-  container.addEventListener("mouseleave", function() {
-    container.removeEventListener("mousemove", resizeable);
-  });
 
   var resize = function() {
     var width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
