@@ -4,6 +4,7 @@
     <title><%= json.project.title %></title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="style.css">
     <%= t.include("partials/_head.html") %>
   </head>
@@ -12,14 +13,14 @@
     <responsive-child>
 
       <div class="image-slider">
-        <div class="first"><img draggable="false" src="./assets/after<%=house.number%>.jpg"></div>
-        <div class="second"> <img draggable="false" src="./assets/before<%=house.number%>.jpg"></div>
+        <div class="first"><img draggable="false" src="./assets/before<%=house.number%>.jpg"></div>
+        <div class="second"> <img draggable="false" src="./assets/after<%=house.number%>.jpg"></div>
       </div>
       <div class="notes">
         <div class="stats">
           <div class="location"><strong><%= house.location %></strong></div>
-          <div class="sqft"><em>Previous house:</em> <%= house.old %> sq. ft.</div>
-          <div class="sqft"><em>Current house:</em> <%= house.new %> sq. ft.</div>
+          <div class="sqft"><em>Previous house:</em> <strong><%= house.old %> sq. ft.</strong></div>,
+          <div class="sqft"><em>Current house:</em> <strong><%= house.new %> sq. ft.</strong></div>
         </div>
         <div class="source">Source: Google Street View</div>
       </div>
