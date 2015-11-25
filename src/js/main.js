@@ -11,7 +11,7 @@ require("component-responsive-frame/child");
   var resizeable = function(e) {
     e.preventDefault();
     var bounds = e.target.getBoundingClientRect();
-    var x = e.clientX - bounds.left;
+    var x = e.clientX ? e.clientX - bounds.left : e.layerX - bounds.left;
     first.style.width = x + "px";
   };
 
@@ -19,8 +19,15 @@ require("component-responsive-frame/child");
     e.preventDefault();
     container.addEventListener("mousemove", resizeable);
   });
+  first.addEventListener("touchstart", function(e) {
+    e.preventDefault();
+    container.addEventListener("touchmove", resizeable);
+  });
   container.addEventListener("mouseup", function() {
     container.removeEventListener("mousemove", resizeable);
+  });
+  container.addEventListener("touchend", function() {
+    container.removeEventListener("touchmove", resizeable);
   });
 
   var resize = function() {
