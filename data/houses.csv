@@ -1,10 +1,10 @@
-number,location,new,old
-1,"Kirkland, WA","4,270",770
-2,"Madison Park, Seattle, WA","3,230",590
-3,"Wedgwood, Seattle, WA","4,790",770
-4,"North Beach/Blue Ridge, Seattle, WA","2,970",600
-5,"Renton, WA","4,060",660
-6,"Tukwila, WA","7,190","1,380"
-7,"Bryant, Seattle, WA","3,640",660
-8,"Loyal Heights (Ballard), Seattle, WA","3,270",660
-9,"Medina, WA","6,990","1,260"
+number,location,new,old,sold,assessed
+1,"Kirkland","4,270",770,"$460,000","$1,533,000"
+2,"Madison Park, Seattle","3,230",590,"$475,000","$1,566,000"
+3,"Wedgwood, Seattle","4,790",770,"$100,000","$1,283,000"
+4,"North Beach/Blue Ridge, Seattle","2,970",600,"$380,000","$1,341,000"
+5,"Renton","4,060",660,"$82,500","$499,000"
+6,"Tukwila","7,190","1,380","$180,000","$1,089,000"
+7,"Bryant, Seattle","3,640",660,"$300,000","$1,396,000"
+8,"Loyal Heights (Ballard), Seattle","3,270",660,"$275,000","$1,088,000"
+9,"Medina","6,990","1,260","$1,330,000","$4,019,000"

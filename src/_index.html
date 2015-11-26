@@ -18,9 +18,9 @@
       </div>
       <div class="notes">
         <div class="stats">
-          <div class="location"><strong><%= house.location %></strong></div>
-          <div class="sqft"><em>Previous house:</em> <strong><%= house.old %> sq. ft.</strong></div>,
-          <div class="sqft"><em>Current house:</em> <strong><%= house.new %> sq. ft.</strong></div>
+          <div class="location"><%= house.location %></div>
+          <div class="sqft"><strong>Before:</strong> <%= house.old %> sq. ft.</strong>, sold for <%= house.sold %></div>
+          <div class="sqft"><strong>After:</strong> <%= house.new %> sq. ft., assessed at <%= house.assessed %></div>
         </div>
         <div class="source">Source: Google Street View</div>
       </div>
